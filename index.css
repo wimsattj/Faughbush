@@ -16,6 +16,7 @@
   width: 90vw;
   align-self: center;
   background-size: cover;
+  background-position: center;
 }
 a{
   text-decoration: none;
@@ -113,8 +114,12 @@ div{
   }
 }
 @media (max-width: 425px) {
+  a{
+    font-size:var(--size-3);
+  }
   .foot {
-    background-position-y: 240px;
+    height:300px;
+    background-position-y: 300px;
   }
 }
 
@@ -125,7 +130,7 @@ div{
   }
   .foot {
     margin: 0px;
-    background-position-y: 480px;
+    background-position-y: 400px;
   }
 
   h3 {
@@ -143,16 +148,19 @@ div{
     background-position-y: 450px;
   }
   h2{
-    margin-top :0px;
+    margin :0px;
+    text-align: center;
   }
   h3 {
     margin: 10px;
     text-align: center;
   }
-
+  .textbox{
+    width:85vw;
+  }
   .foot {
-    height: 17rem;
-    background-position-y: 270px;
+    height: 19rem;
+    background-position-y: 310px;
   }
 
 }
