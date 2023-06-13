@@ -1,0 +1,146 @@
+.photostd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  border-style: 3px solid black;
+  border-radius: 15px;
+  height: 28rem;
+  width: 90vw;
+  align-self: center;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+}
+
+
+.foot{
+  height: 15rem;
+  background-image: url('./photos/20200611_165214.jpg');
+  color:#ddd;
+  background-position: relative;
+  background-position-y: 450px;
+  background-position: center;
+  background-position: top;
+  width: 100vw;
+
+  text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+}
+h2{
+  display: flex;
+  font-size: xx-large;
+  color: blue;
+  justify-content: center;
+  text-shadow: 0px 0px 5px yellow, 0px 0px 5px yellow, 0px 0px 5px yellow;
+}
+h3{
+  font-family: serif;
+  color:#fff;
+  margin: 10px;
+  text-align:center;
+}
+.liner {
+  background-image: url('./photos/20200618_133859.jpg');
+}
+.liner div a {
+  color: rgb(160, 238, 255);
+  font-size: 5rem;
+    text-shadow: 0px 10px 10px black;
+    place-self: center;
+}
+.clean {
+  background-image: url('./photos/20200514_083534.jpg');
+}
+.clean div a{
+
+  color: rgb(255, 197, 197);
+    font-size: 5rem;
+    text-shadow: 0px 10px 10px black;
+}
+.newparts {
+  background-image: url('./photos/20200713_150812.jpg');
+}
+
+.newparts div a {
+  text-align: center;
+  color: rgb(177, 255, 170);
+  font-size: 5rem;
+  text-shadow: 0px 10px 10px black;
+}
+.maintain {
+  background-image: url('./photos/20200527_085455.jpg');
+}
+
+.maintain div a {
+  text-align: center;
+  color: rgb(244, 255, 157);
+  font-size: 5rem;
+  text-shadow: 0px 10px 10px black;
+}
+
+body{
+ display:flex;
+ flex-direction: column;
+ background-color:rgb(9, 9, 71);
+}
+div{
+  margin-bottom:20px;
+}
+.textbox{
+  display:flex;
+  flex-direction: column;
+  
+  width:75vw;
+}
+
+
+
+@media (max-width: 768px) {
+  .foot {
+    background-position-y: 350px;
+  }
+  .whatdo{
+    height:20rem;
+    place-self:center;
+  }
+}
+@media (max-width: 425px) {
+  .foot {
+    background-position-y: 240px;
+  }
+}
+
+@media (max-width: 375px) {
+  .foot {
+    margin: 0px;
+    background-position-y: 480px;
+  }
+
+  h3 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .foot {
+    height: 15rem;
+  }
+
+}@media (max-width: 320px) {
+  .foot {
+    margin: 0px;
+    background-position-y: 450px;
+  }
+
+  h3 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .foot {
+    height: 17rem;
+    background-position-y: 270px;
+  }
+
+}
