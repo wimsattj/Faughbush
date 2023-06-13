@@ -1,3 +1,9 @@
+:root{
+ --size-5: 5rem;
+ --size-4: 4rem;
+ --size-3: 3rem;
+}
+
 .photostd{
   display: flex;
   flex-direction: column;
@@ -28,6 +34,9 @@ a{
 
   text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
 }
+h1{
+  text-align:center;
+}
 h2{
   display: flex;
   font-size: xx-large;
@@ -44,20 +53,18 @@ h3{
 .liner {
   background-image: url('./photos/20200618_133859.jpg');
 }
-.liner div a {
+ a {
   color: rgb(160, 238, 255);
-  font-size: 5rem;
-    text-shadow: 0px 10px 10px black;
-    place-self: center;
+  text-shadow: 0px 10px 10px black;
+  font-size: var(--size-5);
+  place-self: center;
 }
 .clean {
   background-image: url('./photos/20200514_083534.jpg');
 }
 .clean div a{
-
   color: rgb(255, 197, 197);
-    font-size: 5rem;
-    text-shadow: 0px 10px 10px black;
+  text-shadow: 0px 10px 10px black;
 }
 .newparts {
   background-image: url('./photos/20200713_150812.jpg');
@@ -66,7 +73,6 @@ h3{
 .newparts div a {
   text-align: center;
   color: rgb(177, 255, 170);
-  font-size: 5rem;
   text-shadow: 0px 10px 10px black;
 }
 .maintain {
@@ -76,7 +82,6 @@ h3{
 .maintain div a {
   text-align: center;
   color: rgb(244, 255, 157);
-  font-size: 5rem;
   text-shadow: 0px 10px 10px black;
 }
 
@@ -113,6 +118,10 @@ div{
 }
 
 @media (max-width: 375px) {
+  a
+  {
+    font-size:var(--size-3);
+  }
   .foot {
     margin: 0px;
     background-position-y: 480px;
@@ -124,7 +133,7 @@ div{
   }
 
   .foot {
-    height: 15rem;
+    height: 25rem;
   }
 
 }@media (max-width: 320px) {
@@ -132,7 +141,9 @@ div{
     margin: 0px;
     background-position-y: 450px;
   }
-
+  h2{
+    margin-top :0px;
+  }
   h3 {
     margin: 10px;
     text-align: center;
