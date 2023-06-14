@@ -25,7 +25,7 @@ a{
 
 .foot{
   height: 15rem;
-  background-image: url('./photos/20200611_165214.jpg');
+  background-image: url('./photos/poolbar.jpg');
   color:#ddd;
   background-position: relative;
   background-position-y: 450px;
@@ -44,7 +44,7 @@ h2{
   font-size: xx-large;
   color: blue;
   justify-content: center;
-  text-shadow: 0px 0px 5px yellow, 0px 0px 5px yellow, 0px 0px 5px yellow;
+  text-shadow: 0px 0px 5px yellow, 0px 0px 15px yellow, 0px 0px 5px yellow;
 }
 h3{
   font-family: serif;
@@ -53,7 +53,7 @@ h3{
   text-align:center;
 }
 .liner {
-  background-image: url('./photos/20200618_133859.jpg');
+  background-image: url('./photos/newliner.jpg');
 }
  a {
   color: rgb(160, 238, 255);
@@ -62,14 +62,14 @@ h3{
   place-self: center;
 }
 .clean {
-  background-image: url('./photos/20200514_083534.jpg');
+  background-image: url('./photos/cleanopening.jpg');
 }
 .clean div a{
   color: rgb(255, 197, 197);
   text-shadow: 0px 10px 10px black;
 }
 .newparts {
-  background-image: url('./photos/20200713_150812.jpg');
+  background-image: url('./photos/newparts.jpg');
 }
 
 .newparts div a {
@@ -78,7 +78,7 @@ h3{
   text-shadow: 0px 10px 10px black;
 }
 .maintain {
-  background-image: url('./photos/20200527_085455.jpg');
+  background-image: url('./photos/algeapool2.jpg');
 }
 
 .maintain div a {
@@ -109,7 +109,7 @@ div{
     background-position-y: 350px;
   }
   .whatdo{
-    height:20rem;
+    height:25rem;
     place-self:center;
   }
 }
@@ -124,9 +124,12 @@ div{
 }
 
 @media (max-width: 375px) {
-  a
-  {
+  a{
     font-size:var(--size-3);
+  }
+  .photostd{
+    height:41.668rem;
+
   }
   .foot {
     margin: 0px;
@@ -142,10 +145,16 @@ div{
     height: 25rem;
   }
 
-}@media (max-width: 320px) {
+}
+@media (max-width: 320px) {
+  body{
+    margin:0;
+    width:100vw;
+  }
   .foot {
     margin: 0px;
-    background-position-y: 450px;
+    height:25rem;
+
   }
   h2{
     margin :0px;
@@ -157,10 +166,7 @@ div{
   }
   .textbox{
     width:85vw;
-  }
-  .foot {
-    height: 19rem;
-    background-position-y: 310px;
+    text-align:center;
   }
 
 }
