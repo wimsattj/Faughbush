@@ -3,8 +3,20 @@
  --size-4: 4rem;
  --size-3: 3rem;
 }
-body{
-  margin:0px;
+html{
+  width:auto;
+}
+body {
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(9, 9, 71);
+  background-image: linear-gradient(-145deg, rgb(50, 245, 245), rgb(99, 166, 253));
+  width:100%;
+}
+footer{
+  display: flex;
+  justify-content: center;
 }
 .header{
   display:flex;
@@ -21,7 +33,7 @@ body{
   border-style: 3px solid black;
   border-radius: 15px;
   height: 28rem;
-  width: 90vw;
+  width: 90%;
   align-self: center;
   background-size: cover;
   background-position: center;
@@ -35,7 +47,7 @@ body{
   background-color: #ddd;
   border-radius: 10px;
   height: 100vh;
-  width: 98vw;
+  width: 98%;
     
 }
 
@@ -73,7 +85,7 @@ a{
   color:#ddd;
   background-position: relative;
   background-position: center;
-  width: 100vw;
+  width: 100%;
   text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
 }
 h1{
@@ -190,13 +202,6 @@ h3{
   text-shadow: 0px 10px 10px black;
 }
 
-body{
-  display:flex;
-  flex-direction: column;
-  background-color:rgb(9, 9, 71);
-  background-image: linear-gradient(-145deg, rgb(50, 245, 245), rgb(99, 166, 253));
-.
-}
 div{
   margin-bottom:20px;
 }
@@ -204,7 +209,7 @@ div{
   display:flex;
   flex-direction: column;
   
-  width:75vw;
+  width:75%;
 }
 
 
@@ -234,8 +239,9 @@ div{
   .foot{ height:auto }
 }
 @media (max-width: 425px) {
-  a{  font-size:var(--size-3); }
+  a{  font-size: var(--size-3); }
   .foot { height:auto; }
+  h3{ font-size: 1rem; }
 }
 
 @media (max-width: 375px) {
@@ -244,14 +250,12 @@ div{
   h3 {
     margin: 10px;
     text-align: center;
-    font-size: 1.0rem;
   }
 
 }
 @media (max-width: 320px) {
   body{
     margin:0;
-    width:100vw;
   }
   h2{
     margin :0px;
@@ -262,7 +266,7 @@ div{
     text-align: center;
   }
   .textbox{
-    width:85vw;
+    width:85%;
     text-align:center;
   }
 
