@@ -18,21 +18,37 @@
   background-size: cover;
   background-position: center;
 }
+.landing {
+  background-image: url('./photos/large_empty_pool.jpg');
+  background-position: center;
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 100vh;
+  width: 98vw;
+
+
+}
+.textboxtop{
+  display:flex;
+  flex-direction:column;
+  align-self: center;
+  background-color: rgba(169, 251, 201, 0.4);
+  border-style:solid;
+  border-color:aqua;
+
+}
+
 a{
   text-decoration: none;
 }
 
 
 .foot{
-  height: 15rem;
   background-image: url('./photos/poolbar.jpg');
   color:#ddd;
   background-position: relative;
-  background-position-y: 450px;
   background-position: center;
-  background-position: top;
   width: 100vw;
-
   text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
 }
 h1{
@@ -62,7 +78,7 @@ h3{
   place-self: center;
 }
 .clean {
-  background-image: url('./photos/cleanopening.jpg');
+  background-image: url('./photos/dirtyopening.jpg');
 }
 .clean div a{
   color: rgb(255, 197, 197);
@@ -88,9 +104,11 @@ h3{
 }
 
 body{
- display:flex;
- flex-direction: column;
- background-color:rgb(9, 9, 71);
+  display:flex;
+  flex-direction: column;
+  background-color:rgb(9, 9, 71);
+  background-image: linear-gradient(-145deg, rgb(50, 245, 245), rgb(99, 166, 253));
+.
 }
 div{
   margin-bottom:20px;
@@ -106,7 +124,7 @@ div{
 
 @media (max-width: 768px) {
   .foot {
-    background-position-y: 350px;
+
   }
   .whatdo{
     height:25rem;
@@ -118,8 +136,7 @@ div{
     font-size:var(--size-3);
   }
   .foot {
-    height:300px;
-    background-position-y: 300px;
+    height:auto;
   }
 }
 
@@ -133,16 +150,11 @@ div{
   }
   .foot {
     margin: 0px;
-    background-position-y: 400px;
   }
 
   h3 {
     margin: 10px;
     text-align: center;
-  }
-
-  .foot {
-    height: 25rem;
   }
 
 }
@@ -153,7 +165,6 @@ div{
   }
   .foot {
     margin: 0px;
-    height:25rem;
 
   }
   h2{
