@@ -3,8 +3,13 @@
  --size-4: 4rem;
  --size-3: 3rem;
 }
+.header{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
 
-.photostd{
+.photostd {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,30 +24,45 @@
   background-position: center;
 }
 .landing {
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
   background-image: url('./photos/large_empty_pool.jpg');
   background-position: center;
   background-color: #ddd;
   border-radius: 10px;
   height: 100vh;
   width: 98vw;
-
-
 }
-.textboxtop{
+.textboxtop {
+  margin-top:85px;
   display:flex;
   flex-direction:column;
-  align-self: center;
-  background-color: rgba(169, 251, 201, 0.4);
-  border-style:solid;
-  border-color:aqua;
-
+  justify-self: start;
+  background-color: rgba(169, 251, 201, 0.7);
+  border:2px solid aqua ;
+  border-radius: 10px;
+  position: relative;
+  width: 80%;
 }
-
+.textboxtop h3{
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+  color:rgb(0, 0, 0);
+  text-shadow: 0px 0px 15px white,0px 0px 15px blue, 0px 0px 5px rgb(72, 31, 31);
+}
+.textboxtop h2 {
+  width:60%;
+  align-self:center;
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 15px rgb(255, 255, 255);
+}
 a{
   text-decoration: none;
 }
-
-
 .foot{
   background-image: url('./photos/poolbar.jpg');
   color:#ddd;
